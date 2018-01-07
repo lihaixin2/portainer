@@ -4,3 +4,5 @@
 	       --restart=always --name=ui \
 	       -v /var/run/docker.sock:/var/run/docker.sock \
 	       portainer/portainer	
+
+	docker run -d   --name watchtower   -v /var/run/docker.sock:/var/run/docker.sock   v2tec/watchtower --cleanup ui
